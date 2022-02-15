@@ -1,0 +1,7 @@
+<form [formGroup]="form" (submit)="onSubmit(form.value)">
+  <label for="nombre">Nombre: </label>
+  <input name = "nombre" formControlName = "nombre">
+  <label for="email">email: </label>
+  <input name = "email" formControlName = "email">
+  <input type="submit" value = "enviar" [disabled] = 'form.invalid'>
+</form>

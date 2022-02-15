@@ -1,0 +1,7 @@
+<h1>Contador condicional</h1>
+<p>El contador vale : {{contador}}</p>
+<button (click)="incrementar()" >Incrementar</button>
+<button (click)="decrementar()" >Decrementar</button>
+
+<p *ngIf="contador>5">El contador vale más que 5</p>
+<p *ngIf="esPrimo()">El contador es primo</p>

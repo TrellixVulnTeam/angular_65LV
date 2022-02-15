@@ -1,0 +1,6 @@
+<div *ngIf="isAdmin===true ; else sinPermisos">
+  El user tiene permiso de admiinistrador
+</div>
+<ng-template #sinPermisos>
+  El user no tiene permisos de admin
+</ng-template>
