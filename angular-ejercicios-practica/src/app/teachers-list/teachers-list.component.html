@@ -1,0 +1,9 @@
+<form>
+    <span>Name: </span> <input name="name" type="text" [(ngModel)]="teacherName">
+    <button name="add" (click)="addTeacher()">Add</button>
+    <ul >
+      <li *ngFor="let teacher of teachersList" > {{teacher}}
+        <button (click)="eliminateTeacher(teacher)">delete </button>
+      </li>
+    </ul>
+</form>
