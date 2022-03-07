@@ -1,0 +1,34 @@
+<div>
+<h3>Generador de perfiles aleatorio</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <p>Sexo</p>
+        <p>Nombre completo</p>
+        <p>Email</p>
+        <p>Telefono</p>
+        <p>Edad</p>
+        <img>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of _randomUser">
+      <td><span>{{user.results[0].gender}</span></td>
+      <td><span>{{user.results[0].name.first}</span></td>
+      <td><span>{{user.results[0].email}</span></td>
+      <td><span>{{user.results[0].cell}</span></td>
+      <td><span>{{user.results[0].dob.age}</span></td>
+      <td><span>{{user.results[0].picture.medium}</span></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <button (click)="getRandomUser()">Generar</button>
+
+
+  <div ></div>
+
+
+
+</div>

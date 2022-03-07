@@ -1,0 +1,11 @@
+<div>
+  <form>
+    Pairs: <input id="button-pair" type="radio" [checked]="false"
+                  value="button_pairs" [(ngModel)]="button_pairs.value"
+                  (change)="onItemChange($event.target.value)"
+                  >
+    Impairs: <input id="button-impair" type="radio" [(ngModel)]="impairs">
+  </form>
+  <p>pares: {{pairs}}</p>
+  <p>impares: {{impairs}}</p>
+</div>

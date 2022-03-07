@@ -1,0 +1,18 @@
+<div>
+  <h2>Multiply numbers</h2>
+  <div>
+    <form>
+      <span>Number 1:</span>
+      <input name="number-one" type="number" [(ngModel)]="number01">
+    </form>
+
+    <br/>
+
+    <form>
+      <span>Number 2:</span>
+      <input name="number-two" type="number" [(ngModel)]="number02" >
+    </form>
+
+    <p *ngIf="number01!='' &&number02!=''">The result is : {{result(number01,number02)}}</p>
+  </div>
+</div>
